@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>홈 페이지</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>환영합니다!</h1>
+    <p>로그인 페이지로 이동하시려면 아래 버튼을 눌러주세요.</p>
+    <a href="{{ url_for('login') }}" class="button">로그인 페이지로 이동</a>
+</body>
+</html>
